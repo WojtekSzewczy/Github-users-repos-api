@@ -12,7 +12,9 @@ Spring Boot 3.2.2
 Installation and Running
 
 1 clone the repository
+
 2 Navigate to the project folder: cd your-project-folder
+
 3 Run the application: mvn spring-boot:run
 
 Usage
