@@ -22,11 +22,10 @@ public class GithubService {
     }
 
     private List<Repository> filterRepositories(Repository[] repositories, String username) {
-        final List<Repository> repositoryList = Arrays.asList(repositories).stream()
+        return Arrays.stream(repositories)
                 .filter(repository -> !repository.getFork())
                 .peek(repository -> repository.setOwner(username))
                 .toList();
-        return repositoryList;
     }
 
     public List<Repository> getRepositoriesForUser(String username) throws UserNotFoundException {
