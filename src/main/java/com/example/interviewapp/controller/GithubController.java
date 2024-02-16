@@ -1,7 +1,6 @@
 package com.example.interviewapp.controller;
 
 import com.example.interviewapp.service.GithubService;
-import com.example.interviewapp.model.Branch;
 import com.example.interviewapp.model.Repository;
 import com.example.interviewapp.exceptions.UserNotFoundException;
 import org.springframework.web.bind.annotation.GetMapping;
